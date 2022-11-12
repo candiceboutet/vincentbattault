@@ -1,0 +1,161 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+   
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+ul{
+    list-style-type: none;
+    display: flex;
+
+}
+li{
+    margin: 3em;
+    opacity: 50%;
+    transition: 0.5s ease;
+}
+li:hover{
+    opacity: 100%;
+}
+.hero-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+.about-text {
+    font-size: 48px;
+}
+.about-text span {
+    color : #DDEA8C;
+}
+#logo-container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.logo{
+    opacity: 50%;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    opacity: 100%;
+}
+.logos-bar{
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+}
+.bar{
+    position: relative;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 25px;
+  font-size: 14px;
+ 
+}
+.round {
+    border : 1px solid white;
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 30px;
+    border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-left: 1em; 
+    border-radius: 70px;
+ 
+}
+.eight{
+    border : 1px solid white;
+    width : 30px;
+    height: 30px;
+    border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-left: 1em; 
+}
+.bar::before {
+    width: 100%;
+    height: 2px;
+    background: white;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+} 
+#table-container {
+    width: 100%;
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+/* .xp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} */
+.line-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.xp-line{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    width: 80%;
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.534);
+}
+.company {
+    width: 20%;
+}
+.role{
+    width: 20%;
+}
+.place{
+    width: 20%;
+}
+.year{
+    width: 10%;
+}
+.wassup{
+height: 50vh;
+}
+#wassup-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+#wassup-text{
+    width: 30%;
+}
+#wassup-work{
+    font-size: 48px;
+}
+#wassup-image{
+    height: 270px;
+    width: 510px;
+    border-radius: 50px;
+    background-image: url("./img/Photo\ le\ 04-12-2020\ à\ 20.28\ #4.jpg");
+   background-color: #DDEA8C;
+}
