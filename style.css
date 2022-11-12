@@ -7,25 +7,41 @@ nav{
    
     text-transform: uppercase;
     font-size: 14px;
-    
-}
-ul{
-    list-style-type: none;
     display: flex;
-
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100vw;
+    position: absolute;
 }
-li{
+.txt {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollTxt 23s linear infinite;
+}
+
+@keyframes scrollTxt {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+a{
+    display: flex;
+    flex-wrap: nowrap;
     margin: 3em;
     opacity: 50%;
     transition: 0.5s ease;
 }
-li:hover{
+a:hover{
     opacity: 100%;
 }
 .hero-container {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 150px;
+    padding-top: 100px;
 }
 .about-text {
     font-size: 48px;
@@ -54,11 +70,15 @@ width: 100%;
 .bar{
     position: relative;
   display: flex;
+  justify-content: space-between;
   width: 80%;
   margin: 0 auto;
   padding-top: 25px;
   font-size: 14px;
  
+}
+.bar-group{
+    display: flex;
 }
 .round {
     border : 1px solid white;
@@ -147,7 +167,7 @@ height: 50vh;
     padding-bottom: 150px;
 }
 #wassup-text{
-    width: 30%;
+    width: 40%;
 }
 #wassup-work{
     font-size: 48px;
@@ -156,6 +176,6 @@ height: 50vh;
     height: 270px;
     width: 510px;
     border-radius: 50px;
-    background-image: url("./img/Photo\ le\ 04-12-2020\ à\ 20.28\ #4.jpg");
-   background-color: #DDEA8C;
+    background-image: url('./img/Rectangle\ 12.jpg'); 
+    background-size: contain;  
 }
