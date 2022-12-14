@@ -18,12 +18,11 @@ const movingBg = document.getElementById("moving-bg");
 
 btn2.addEventListener('mouseover', () => {
  movingBg.style.left = "40%";
- btn1.style.background = "white";
- btn2.style.background = "white";
+ btn1.style.background = "rgba(255, 255, 255, 0.3);";
+ btn2.style.background = "rgba(255, 255, 255, 0.3);";
 
 }) 
 movingBg.addEventListener('mouseleave', () => {
     movingBg.style.left = "0%";
-    btn1.style.background = "rgb(79, 77, 77)";
-    btn2.style.background = "rgb(79, 77, 77)";
+
    }) 

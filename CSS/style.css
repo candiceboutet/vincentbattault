@@ -1,15 +1,24 @@
-@font-face {
-    font-family: 'NeueMontreal';
-    src: url('./font/NeueMontreal-Regular.otf') format('otf');
+/* Fonts */
+  @font-face {
+    font-family: 'Mondwest';
+    src: url('/font/Mondwest-Regular.otf') format('otf');
   }
+  @font-face {
+    font-family: 'Helvetica Now Display';
+    src: url('/font/HelveticaNowDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+  }
+
 
 body{
     color: white;
     background-color: black;
-    font-family: "NeueMontreal", Helvetica, sans-serif;
+    font-family: 'Helvetica Now Display';
     position: relative;
 
+
 }
+
 
 #mouse {
     height: 20px;
@@ -24,6 +33,41 @@ body{
     transition: 0.25s ease;
 
   }
+
+/* SPHERE */
+#sphere-container {
+    height: 100%;
+  
+
+}
+.sphere{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    filter: blur(7rem);
+}
+#jaune{
+    background-color: yellow;
+    width: 75%;
+    height: 70%;
+}
+#rouge{
+    background-color: red;
+    width: 75%;
+    height: 50%;
+}
+#bleu{
+   transform: translateY(-50%);
+   position: absolute;
+   left: 0%;
+   top : -5%;
+z-index: -1;
+    background-color: blue;
+    width: 100%;
+    height: 40%;
+}
 
 /* TOGGLE BTN */
 .btn_box {
@@ -42,7 +86,7 @@ body{
 	display: table;
 	float: left;
 	border: none;
-	background: rgb(79, 77, 77);
+	background: rgba(255, 255, 255, 0.3);
 	padding: 15px 35px;
     height: 100%;
     width: 50%;
@@ -51,6 +95,9 @@ body{
 }
 #btn1{
     transition: 0.6s;
+}
+.toggle {
+    z-index: 1000;
 }
 
 #moving-bg{
@@ -106,11 +153,23 @@ a{
 a:hover{
     opacity: 100%;
 }
+
+/* HERO */
 .hero-container {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 150px;
-    padding-top: 100px;
+    padding-top: 120px;
+
+}
+.hero-box{
+    width: 80%;
+    height : 50vh;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-around;
 }
 .about-text {
     font-size: 48px;
@@ -118,6 +177,53 @@ a:hover{
 .about-text span {
     color : #DDEA8C;
 }
+.pixel{
+    font-family: "Mondwest";
+    font-weight: 300;
+    position: relative;
+}
+#inversed{
+    color: #01010100;
+    -webkit-text-stroke: 1px #ffffff;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 330px;
+    width: 280;
+    font-size: 14px;
+    font-family: 'Helvetica Now Display';
+}
+.info-box{
+    display: flex;
+    justify-content: center;
+   
+}
+.info-title {
+   
+    width: 50%;
+    text-align: right;
+    padding-right: 50px;
+   color: rgba(255, 255, 255, 0.716);
+}
+.info-details {
+
+    width: 50%;
+    color: rgba(255, 255, 255, 0.352);
+}
+#circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #DDEA8C;
+    position: absolute;
+    top: -38%;
+    right: -3%;
+    z-index: -1;
+    
+}
+/* MAIN */
 #logo-container{
     width: 80%;
     margin: 0 auto;
@@ -305,6 +411,7 @@ height: 50vh;
 
 h1{
     font-size: 136px;
+    line-height: 70px;
 }
 #projects-container{
     margin-bottom: 120px;
@@ -375,3 +482,108 @@ h2{
 .downarrow{
     width: 35px;
 }
+
+/* OVERVIEW */
+.overview-image{
+    background-image: url("/img/olinid/olinid-bg.png");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+   width: 1400px;
+    height: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+.overview-img-info{
+    margin-right: 20px;
+}
+.section-text{
+    width: 50%;
+    text-align: center;
+    margin : 0 auto;
+    padding-top: 50px;
+    font-size: 22px;
+}
+.overview-img-2{
+    width: 100%;
+    height: 565px;
+    background-image: url("/img/olinid/car.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#overview-img-swirll{
+    background-image: url("/img/swirll/overview-swirll.svg");
+}
+#overview-img-swirll-2{
+    background-image: url("/img/swirll/vinyards.svg");
+}
+#overview-img-scupt{
+    background-image: url("/img/sculpt/overview-sculpt.svg");
+}
+#overview-img-sculpt-2{
+    background-image: url("/img/sculpt/overview-sculpt-2.svg");
+}
+
+/* DESIGN SYSTEM */
+.design-container{
+    width: 80%;
+    margin : 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.design-img{
+    width: 560px;
+    height: 560px;
+    background-image: url("/img/olinid.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.design-txt{
+width: 25%;
+}
+
+/* MOBILE */
+.mobile-img{
+    width: 100%;
+    height: 565px;
+    background-image: url("/img/olinid/iphone-grid\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 80px;
+    margin-bottom: 80px; 
+}
+.mobile-trio-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.mobile-trio{
+    width: 33%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#mobile-1{
+    background-image: url("/img/olinid/olinid-mobile-1.svg");
+}
+#mobile-2{
+    background-image: url("/img/olinid/olinid-mobile-2.svg");
+}
+#mobile-3{
+    background-image: url("/img/olinid/olinid-mobile-3.svg");
+
+}
+
+/* DESKTOP */
