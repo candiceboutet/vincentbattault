@@ -28,10 +28,11 @@ body{
     opacity: 0.3;
     position: absolute;
     border-radius: 50px;
-   z-index: -1;
-    transform: translate(-50%, -50%);
+   z-index: 999;
     transition: 0.25s ease;
-
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+  
   }
 
 /* SPHERE */
@@ -91,19 +92,30 @@ z-index: -1;
     height: 100%;
     width: 50%;
     transition: 0.6s; 
+    position: relative;
     
 }
 #btn1{
     transition: 0.6s;
 }
 .toggle {
-    z-index: 1000;
+    position: absolute;
+	z-index: 999;
+	top: 40%;
+	left: 40%;
+	color: #010101;
+	transition: 1s;
+}
+#aboutBtn{
+    color:white;
+    left: 30%;
+    transition: 1s;
 }
 
 #moving-bg{
 	width: 60%;
 	height: 100%;
-	z-index: 999;
+	z-index: 998;
 	position: absolute;
 	color: #010101;
 	background-color: rgb(254, 252, 252);
@@ -112,6 +124,7 @@ z-index: -1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    right: 0%;
 }
 
 /* MOVING NAV */
@@ -149,6 +162,7 @@ a{
     cursor: pointer;
     color: white;
     text-decoration: none;
+    z-index: 100;
 }
 a:hover{
     opacity: 100%;
